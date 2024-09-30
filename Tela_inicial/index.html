@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilith Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="/img/logo_contabilith_sem_fundo.png" alt="Contabilith Logo"> <!-- A logo será sua imagem -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Empresas</a></li>
+                <li><a href="/Financeiro/index.html">Financeiro</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="top-bar">
+                <span>Suporte</span>
+                <div class="divider"></div> <!-- Linha divisória entre Suporte e Usuário -->
+                <div class="user">
+                    <img src="/img/usuario_icon.svg" alt="Ícone do usuário"> <!-- Agora em SVG -->
+                    <span>Usuário</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="dashboard">
+            <div class="card">
+                <h3>A receber hoje</h3>
+                <p class="amount">R$69,69</p>
+                <p>Restante do mês: R$96,96</p>
+                <button class="btn-green">Novo Recebimento</button>
+            </div>
+
+            <div class="card">
+                <h3>A Pagar hoje</h3>
+                <p class="amount">R$69,69</p>
+                <p>Restante do mês: R$96,96</p>
+                <button class="btn-red">Novo Recebimento</button>
+            </div>
+
+            <div class="card">
+                <h3>Recebimentos em atraso</h3>
+                <p class="amount late">R$69,69</p>
+            </div>
+
+            <div class="card">
+                <h3>Pagamentos em atraso</h3>
+                <p class="amount late-red">R$69,69</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

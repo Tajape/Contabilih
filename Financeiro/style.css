@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  padding: 20px;
+  position: fixed;
+  color: white;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+}
+
+/* Outras definições mantidas */
+
+nav ul li {
+  margin-bottom: 20px;
+  position: relative; /* Mantém o menu pai como referência */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.financeiro .sub-menu {
+  display: none;
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+  background-color: #3a3a3a; /* Fundo escuro para destacar */
+  border-radius: 8px;
+  padding: 10px 15px; /* Adicionando espaçamento ao redor do submenu */
+}
+
+.financeiro:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu li {
+  margin-bottom: 10px;
+}
+
+.sub-menu li a {
+  color: #fff; /* Cor branca para contrastar com o fundo */
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre o ícone e o texto */
+  padding: 10px 20px;
+  border-radius: 8px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease;
+}
+
+.sub-menu li a:hover {
+  background: linear-gradient(90deg, #00ff00, #00cc00); /* Gradiente verde no hover */
+  color: white;
+}
+
+.sub-menu li a:before {
+  content: "+"; /* Ícone de adicionar ao lado das subseções */
+  color: #00ff00; /* Cor do ícone */
+  font-weight: bold;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  background-color: #182546; /* Fundo azul escuro */
+  min-height: 100vh;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.divider {
+  width: 1px;
+  height: 30px;
+  background-color: #555;
+  margin: 0 15px;
+}
+
+.user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.dashboard {
+  margin-top: 30px;
+}
+
+h1 {
+  color: white;
+}
+
+.lancamentos {
+  background-color: #e5e5e5;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.btn-receitas, .btn-despesas {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-receitas {
+  background: linear-gradient(90deg, #00ff00, #00cc00); /* Gradiente Receitas */
+  color: white;
+}
+
+.btn-despesas {
+  background: linear-gradient(90deg, #ff0000, #cc0000); /* Gradiente Despesas */
+  color: white;
+}
+
+.btn-receitas:hover, .btn-despesas:hover {
+  opacity: 0.8;
+}
+
+/* Outras definições mantidas */
+
+nav ul li {
+    margin-bottom: 20px;
+    position: relative; /* Mantém o menu pai como referência */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.financeiro .sub-menu {
+    display: none;
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+    background-color: #3a3a3a; /* Fundo escuro para destacar */
+    border-radius: 8px;
+    padding: 10px 15px; /* Adicionando espaçamento ao redor do submenu */
+}
+
+.financeiro:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin-bottom: 10px;
+}
+
+.sub-menu li a {
+    color: #fff; /* Cor branca para contrastar com o fundo */
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre o ícone e o texto */
+    padding: 10px 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease;
+}
+
+.sub-menu li a:hover {
+    background: linear-gradient(90deg, #00ff00, #00cc00); /* Gradiente verde no hover */
+    color: white;
+}
+
+.sub-menu li a:before {
+    content: "+"; /* Ícone de adicionar ao lado das subseções */
+    color: #00ff00; /* Cor do ícone */
+    font-weight: bold;
+}
